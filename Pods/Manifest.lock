@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (3.3.1)
+  - DynamicColor (2.4.0)
+  - IQKeyboardManagerSwift (4.0.2)
+  - JHSpinner (0.1.1)
+  - LMGeocoder (1.0.3)
+  - MapleBacon (2.0.8)
+  - PullToRefreshSwift (2.0.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.3)
+  - DynamicColor
+  - IQKeyboardManagerSwift
+  - JHSpinner
+  - LMGeocoder (= 1.0.3)
+  - MapleBacon
+  - PullToRefreshSwift
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  DynamicColor: 2f3fd61053684667bad9f03045dcf9a2a5a007ea
+  IQKeyboardManagerSwift: 2f2c19c509f67c4c0df2826db54033d3e090ce65
+  JHSpinner: d2d986f3116ea4087f35214d5e2c95221d3630ee
+  LMGeocoder: 100572f9e572a26d3506ee0604d6629bea391767
+  MapleBacon: 32e3590e1730485b93f450283ff242f9444efc12
+  PullToRefreshSwift: 5c509e89c6638eae689813b665eff1a0ea0560d3
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0

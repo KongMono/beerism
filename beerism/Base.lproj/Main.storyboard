@@ -44,6 +44,35 @@
             </objects>
             <point key="canvasLocation" x="838.125" y="-347.53521126760563"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="0OA-FS-fqh">
+            <objects>
+                <tableViewController id="xZs-yC-Y0C" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ldm-7S-XKl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5OV-fG-e7F">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5OV-fG-e7F" id="3bu-H8-JQx">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xZs-yC-Y0C" id="OZ9-U6-7xq"/>
+                            <outlet property="delegate" destination="xZs-yC-Y0C" id="fUB-w5-dEi"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooQ-0s-0Ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580" y="519"/>
+        </scene>
         <!--Event-->
         <scene sceneID="v76-VB-gdv">
             <objects>
@@ -128,7 +157,7 @@
                             <constraint firstItem="cgr-Lg-gGJ" firstAttribute="top" secondItem="Zk9-BL-eHW" secondAttribute="top" id="jkb-08-SI6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="m1R-x2-nIo"/>
+                    <tabBarItem key="tabBarItem" title="Event" id="m1R-x2-nIo"/>
                     <navigationItem key="navigationItem" title="Event" id="Ofg-hZ-NcS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>

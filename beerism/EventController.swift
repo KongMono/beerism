@@ -12,6 +12,7 @@ import MapleBacon
 import SwiftyJSON
 import PullToRefreshSwift
 import DynamicColor
+import JHSpinner
 
 class EventController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
   
@@ -55,8 +56,13 @@ class EventController: UIViewController, UITableViewDataSource, UITableViewDeleg
         navigationController?.navigationBar.barTintColor = UIColor(hexString: BeerismColor.colorPrimaryDark)
     }
 
-    
     func loadData(){
+        let spinner = JHSpinnerView.showDeterminiteSpinnerOnView(self.view)
+        spinner.progress = 0.0
+        view.addSubview(spinner)
+
+        view.addSubview(spinner)
+        
         Alamofire.request(.GET, API.event_service)
             .validate()
             .responseJSON { response in
@@ -70,6 +76,8 @@ class EventController: UIViewController, UITableViewDataSource, UITableViewDeleg
                 if self.mDataEvents.count > 0 {
                     self.mTableView.reloadData()
                 }
+                
+                spinner.dismiss()
         }
     }
     

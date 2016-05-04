@@ -9,5 +9,6 @@ pod 'LMGeocoder', '1.0.3'
 pod 'MapleBacon'
 pod 'IQKeyboardManagerSwift'
 pod 'DynamicColor'
+pod 'JHSpinner'
 end
 
