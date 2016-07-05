@@ -8,15 +8,19 @@
 
 import UIKit
 
-class ViewController: UITabBarController {
+class ViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Beerism"
+       
     }
-   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+   
+   
 }
 

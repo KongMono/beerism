@@ -101,6 +101,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		13232B611CEC3F3B008E2BB6 /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		7DCDEE46E865C0B3992219C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +143,7 @@
 		F070DA291C9F9C5F00D95B71 /* beerism */ = {
 			isa = PBXGroup;
 			children = (
+				13232B611CEC3F3B008E2BB6 /* image */,
 				F070DA2E1C9F9C5F00D95B71 /* Main.storyboard */,
 				F070DA2A1C9F9C5F00D95B71 /* AppDelegate.swift */,
 				F070DA2C1C9F9C5F00D95B71 /* ViewController.swift */,

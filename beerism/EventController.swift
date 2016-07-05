@@ -13,6 +13,7 @@ import SwiftyJSON
 import PullToRefreshSwift
 import DynamicColor
 import JHSpinner
+import SwiftDate
 
 class EventController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
   
@@ -60,8 +61,6 @@ class EventController: UIViewController, UITableViewDataSource, UITableViewDeleg
         let spinner = JHSpinnerView.showDeterminiteSpinnerOnView(self.view)
         spinner.progress = 0.0
         view.addSubview(spinner)
-
-        view.addSubview(spinner)
         
         Alamofire.request(.GET, API.event_service)
             .validate()
@@ -93,7 +92,9 @@ class EventController: UIViewController, UITableViewDataSource, UITableViewDeleg
         let cell = tableView.dequeueReusableCellWithIdentifier("customcell") as! CustomTableViewCell
 
         var dict = self.mDataEvents[indexPath.row]
-        cell.mTime.text = dict["event_start"] as? String
+        let event_start = dict["event_start"] as? String
+        let date_format = event_start!.toDate(DateFormat.Custom("yyyy-MM-dd HH:mm:ss"))
+        cell.mTime.text = date_format!.toString(DateFormat.Custom("MMM dd"))
         cell.mTitle.text = dict["event_name"] as? String
         cell.mPlace.text = dict["place_address"] as? String
         let string_image = dict["event_cover_img"] as? String

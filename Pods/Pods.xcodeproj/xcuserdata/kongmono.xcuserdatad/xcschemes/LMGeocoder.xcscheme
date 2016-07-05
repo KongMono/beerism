@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E3E05D5391086D1DEEA29DBE'
+               BlueprintIdentifier = 'B63D0D73CF0D93529918E530'
                BlueprintName = 'LMGeocoder'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LMGeocoder.framework'>

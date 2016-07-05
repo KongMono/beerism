@@ -10,5 +10,6 @@ pod 'MapleBacon'
 pod 'IQKeyboardManagerSwift'
 pod 'DynamicColor'
 pod 'JHSpinner'
+pod 'SwiftDate'
 end
 

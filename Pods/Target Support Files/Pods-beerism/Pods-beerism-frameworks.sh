@@ -91,6 +91,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-beerism/LMGeocoder.framework"
   install_framework "Pods-beerism/MapleBacon.framework"
   install_framework "Pods-beerism/PullToRefreshSwift.framework"
+  install_framework "Pods-beerism/SwiftDate.framework"
   install_framework "Pods-beerism/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -101,5 +102,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-beerism/LMGeocoder.framework"
   install_framework "Pods-beerism/MapleBacon.framework"
   install_framework "Pods-beerism/PullToRefreshSwift.framework"
+  install_framework "Pods-beerism/SwiftDate.framework"
   install_framework "Pods-beerism/SwiftyJSON.framework"
 fi
